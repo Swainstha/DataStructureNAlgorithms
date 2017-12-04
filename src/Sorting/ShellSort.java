@@ -2,6 +2,7 @@ package Sorting;
 public class ShellSort {
 
 
+    // first the highest knuth sequence number suitable for the data length was found  and decremented after each iteration.
     public void shellSorting(int[] array) {
         int inner, outer;
         int temp;
