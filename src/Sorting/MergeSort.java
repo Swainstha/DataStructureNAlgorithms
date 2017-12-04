@@ -2,6 +2,7 @@ package Sorting;
 public class MergeSort {
     private int[] array = new int[10];
 
+    //implementing mergeSort using recursion by dividing the array into two halves and calling merge to sort the two arrays
     public int[] mergeSort(int[] data) {
         int len = data.length;
         //System.out.println(len);
@@ -30,6 +31,7 @@ public class MergeSort {
         int[] data = new int[data1.length + data2.length];
         int i=0;
         int j=0;
+        //sorting the two arrays into one
         for(int k=0; k < (data1.length + data2.length); k++) {
             if(i < data1.length && j < data2.length) {
                 if (data1[i] < data2[j]) {
