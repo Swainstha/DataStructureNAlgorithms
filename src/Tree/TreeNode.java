@@ -11,6 +11,7 @@ public class TreeNode {
         this.data = data;
     }
 
+    //finding the required node by recursively going into the left and right nodes of a node until it reaches the leaf node or until the required node is found.
     public TreeNode find(Integer data) {
         if(this.data == data && !this.isDeleted()) {
             return this;
@@ -22,6 +23,7 @@ public class TreeNode {
         return null;
     }
 
+    //Inserting a given data by comparing with the data of the nodes and selecting the right node or left node accordingly and then recusively inserting the data.
     public void insert(Integer data) {
         if(data > this.data ) {
             if(this.rightChild == null) {
