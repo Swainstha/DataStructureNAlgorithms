@@ -23,11 +23,13 @@ public class BinarySearchTree {
         return null;
     }
 
+    //soft delete. The node is there but it cant br found is searched
     public void deleteSoft(Integer data) {
         TreeNode node = this.find(data);
         node.delete();
     }
 
+    //hard delete. Deleting the node itself and re-arranging the tree after the node has been deleted
     public void delete(Integer data) {
         TreeNode current = this.root;
         TreeNode parent = this.root;
