@@ -9,7 +9,7 @@ public class InsertionSort {
     public InsertionSort(Employee[] e) {
         this.e = e;
     }
-
+    /** Insertion sort of integers */
     public int[] insertionSortingInteger() {
         int[] list = new int[array.length];
         int current;
@@ -25,6 +25,8 @@ public class InsertionSort {
         }
         return list;
     }
+    
+    /** Insertion sort of employee objects with respect to their employee number */
 
     public Employee[] insertionSortingObject() {
 
