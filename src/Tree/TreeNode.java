@@ -14,12 +14,14 @@ public class TreeNode {
     //finding the required node by recursively going into the left and right nodes of a node until it reaches the leaf node or until the required node is found.
     public TreeNode find(Integer data) {
         if(this.data == data && !this.isDeleted()) {
+            System.out.println("Data found");
             return this;
         } else if(this.data > data && leftChild != null) {
             return leftChild.find(data);
         } else if(rightChild != null) {
             return rightChild.find(data);
         }
+        System.out.println("Could not find the data");
         return null;
     }
 

@@ -45,7 +45,7 @@ public class CheckStrings {
             for(int i = 0; i < s1.length(); i++ ) {
                 for(int j = 0; j < s1.length(); j++) {
                     if(!list.contains(j)) {
-                        if (c1[i] == c2[j]) {
+                        if (c1[i] == c2[j] && c1[i] != 32 && c2[i] != 32) {
                             list.add(j);
                             count++;
                         }

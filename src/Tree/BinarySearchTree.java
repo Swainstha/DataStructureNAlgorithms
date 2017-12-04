@@ -37,6 +37,7 @@ public class BinarySearchTree {
 
         if(current == null)
             return;
+
         // finding the node to be deleted
         while(current != null && current.getData() != data) {
             parent = current;
@@ -47,6 +48,10 @@ public class BinarySearchTree {
                 current = current.getRightChild();
                 isLeftChild = false;
             }
+        }
+        if(current == null) {
+            System.out.println("Not found");
+            return;
         }
 
         // if the node to be deleted is a leaf node

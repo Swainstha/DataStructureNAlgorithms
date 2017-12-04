@@ -10,10 +10,8 @@ public class DoublyLinkedListDemo {
         doublyLinkedList.insertAtHead(86);
         doublyLinkedList.insertAtHead(98);
 
-
-        InsertionSort insertionSort = new InsertionSort(doublyLinkedList);
-        System.out.println(insertionSort.insertionSorting());
-        //System.out.println(doublyLinkedList);
+        System.out.println(doublyLinkedList);
+        System.out.println("The length is " + doublyLinkedList.length());
 
     }
 }

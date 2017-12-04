@@ -11,6 +11,7 @@ public class Stack {
         if(pointer != -1) {
             return array[pointer--];
         }
+        System.out.println("The stack is empty");
         return 0;
     }
 
